@@ -25,8 +25,8 @@ resource "azapi_resource" "azure_arc_gateway" {
 }
 
 resource "azurerm_management_lock" "azure_arc_gateway_lock" {
-  name       = "Azure Arc Gateway Lock"
+  name       = "Azure Arc gateway Lock"
   scope      = azapi_resource.azure_arc_gateway.id
   lock_level = "CanNotDelete"
-  notes      = "Azure Arc Gateway is read-only!"
+  notes      = "Azure Arc gateway is read-only!"
 }

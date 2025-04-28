@@ -1,12 +1,12 @@
-# Azure Arc Gateway with Terraform
+# Azure Arc gateway with Terraform
 
-This repository provides an example of deploying an Azure Arc Gateway with Terraform!
+This repository provides an example of deploying an Azure Arc gateway with Terraform!
 
 ![Release](/assets/portal.png)
 
 ## 🚀 Features
 
-- Azure Arc Gateway deployed with a Terraform module
+- Azure Arc gateway deployed with a Terraform module
 - "Do not delete" lock on deployed resource
 
 ## 📄 Usage
@@ -15,7 +15,7 @@ This repository provides an example of deploying an Azure Arc Gateway with Terra
 
 1. Clone this repository.
 2. Copy or rename the `terraform.auto.tfvars.example` file to `terraform.auto.tfvars`. 
-3. Fill out the Arc Gateway name and Azure resource group name for use locally.
+3. Fill out the Azure Arc gateway name and Azure resource group name for use locally.
 4. Log in to Azure and run Terraform. The subscription ID can be sourced from the `ARM_SUBSCRIPTION_ID` environment variable.
 
 ```powershell

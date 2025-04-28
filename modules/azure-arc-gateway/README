@@ -1,19 +1,19 @@
 # azure-arc-gateway
 
-This Terraform module deploys an Azure Arc Gateway and a do-no-delete lock on the resource.
+This Terraform module deploys an Azure Arc gateway and a do-no-delete lock on the resource.
 
 ## Input Variables
 
 | Name                     | Type   | Description                                                             |
 |--------------------------|--------|-------------------------------------------------------------------------|
-| arc_gateway_api_version  | string | Azure Arc Gateway Type API version                                      |
-| arc_gateway_name         | string | Azure Arc Gateway Name                                                  |
-| arc_gateway_type         | string | Azure Arc Gateway Type                                                  |
+| arc_gateway_api_version  | string | Azure Arc gateway Type API version                                      |
+| arc_gateway_name         | string | Azure Arc gateway Name                                                  |
+| arc_gateway_type         | string | Azure Arc gateway Type                                                  |
 | resource_group_name      | string | Azure Resource Group Name                                               |
 
 ## Outputs
 
 | Name                    | Description                              |
 |-------------------------|------------------------------------------|
-| arc_gateway_url         | The URL of the Azure Arc Gateway         |
-| arc_gateway_resource_id | The resource ID of the Azure Arc Gateway |
+| arc_gateway_url         | The URL of the Azure Arc gateway         |
+| arc_gateway_resource_id | The resource ID of the Azure Arc gateway |

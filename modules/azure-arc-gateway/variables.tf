@@ -1,7 +1,7 @@
 variable "azure_arc_gateway_api_version" {
   type        = string
   default     = "2024-11-10-preview"
-  description = "The currently available API versions for Arc Gateway (last updated 04/27/2025)."
+  description = "The currently available API versions for Azure Arc gateway (last updated 04/27/2025)."
 
   validation {
     error_message = "Please use a valid API version."
@@ -14,16 +14,16 @@ variable "azure_arc_gateway_api_version" {
 
 variable "azure_arc_gateway_name" {
   type        = string
-  description = "Arc Gateway Name."
+  description = "Azure Arc gateway Name."
 }
 
 variable "azure_arc_gateway_type" {
   type        = string
   default     = "Public"
-  description = "The currently available Arc Gateway type(s) (last updated 04/27/2025)."
+  description = "The currently available Azure Arc gateway type(s) (last updated 04/27/2025)."
 
   validation {
-    error_message = "Please use a valid Arc Gateway type. At present (last updated 04/26/2025) only 'Public' is allowed."
+    error_message = "Please use a valid Azure Arc gateway type. At present (last updated 04/26/2025) only 'Public' is allowed."
     condition     = contains(["Public"], var.azure_arc_gateway_type)
   }
 }
