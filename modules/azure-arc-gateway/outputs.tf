@@ -5,5 +5,5 @@ output "azure_arc_gateway_url" {
 
 output "azure_arc_gateway_resource_id" {
   value = azapi_resource.azure_arc_gateway.output.id
-  value       = module.azure_arc_gateway.azure_arc_gateway_resource_id  
+  description = "Azure Arc gateway Resource ID."  
 }
