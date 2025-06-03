@@ -6,8 +6,14 @@ variable "azure_arc_gateway_api_version" {
   validation {
     error_message = "Please use a valid API version."
     condition = can(regex(join("", concat(["^("], [join("|", [
-      "2024-11-10-preview", "2024-09-10-preview", "2024-07-31-preview",
-      "2024-07-10", "2024-05-20-preview", "2024-03-31-preview"
+      "2025-02-19-preview",
+      "2025-01-13",
+      "2024-11-10-preview",
+      "2024-09-10-preview",
+      "2024-07-31-preview",
+      "2024-07-10",
+      "2024-05-20-preview",
+      "2024-03-31-preview"
     ])], [")$"])), var.azure_arc_gateway_api_version))
   }
 }
