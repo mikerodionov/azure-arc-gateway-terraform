@@ -1,6 +1,6 @@
 variable "azure_arc_gateway_api_version" {
   type        = string
-  default     = "2024-11-10-preview"
+  default     = "2025-02-19-preview"
   description = "The currently available API versions for Azure Arc gateway (last updated 04/27/2025)."
 
   validation {
