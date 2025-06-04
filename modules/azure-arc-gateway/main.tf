@@ -21,5 +21,11 @@ resource "azapi_resource" "azure_arc_gateway" {
     }
   }
 
+  timeouts {
+    create = "60m"
+    update = "60m"
+    delete = "30m"
+  }
+
   tags = var.tags
 }
