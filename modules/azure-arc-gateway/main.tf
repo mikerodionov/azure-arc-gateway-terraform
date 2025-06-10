@@ -12,7 +12,7 @@ resource "azapi_resource" "azure_arc_gateway" {
   name      = var.azure_arc_gateway_name
   parent_id = data.azurerm_resource_group.rg.id
 
-  location = data.azurerm_resource_group.rg.location
+  location = var.azure_arc_gateway_location
 
   body = {
     properties = {
